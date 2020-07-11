@@ -1,0 +1,13 @@
+bitbot.ledRainbow()
+music.startMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.ForeverInBackground)
+basic.forever(function () {
+    bitbot.ledRotate()
+    bitbot.goms(BBDirection.Forward, 60, 400)
+    bitbot.goms(BBDirection.Reverse, 60, 400)
+    bitbot.rotatems(BBRobotDirection.Left, 60, 400)
+    bitbot.rotatems(BBRobotDirection.Right, 60, 400)
+    bitbot.goms(BBDirection.Forward, 60, 400)
+    bitbot.goms(BBDirection.Reverse, 60, 400)
+    bitbot.rotatems(BBRobotDirection.Right, 60, 400)
+    bitbot.rotatems(BBRobotDirection.Left, 60, 400)
+})
